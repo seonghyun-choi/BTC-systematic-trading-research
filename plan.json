@@ -1,0 +1,22 @@
+{
+ "id":"CF1", "date_kst":"2026-10-26", "period":["2020-01-01","2022-12-31"],
+ "premise":"Contemporaneous sustained spot agreement may improve BTC futures-flow continuation. Does not establish spot leads futures or temporal causal ordering.",
+ "data":"Official Binance spot and USD-M BTCUSDT monthly 1m klines; quote volume and taker-buy quote volume. Existing futures raw reused.",
+ "imbalance":"2*taker_buy_quote_volume/quote_volume-1 for each completed minute, each market separately",
+ "threshold":0.2, "persistence_minutes":3,
+ "LONG":"futures imbalance>=0.2 in all last3 completed minutes. CF1 additionally requires spot>=0.2 in all same3minutes",
+ "SHORT":"futures imbalance<=-0.2 in all last3 completed minutes. CF1 additionally requires spot<=-0.2 in all same3minutes",
+ "trigger":"false-to-true of futures3minute condition; prior and current3minute windows valid in both markets. Treatment is subset of identical baseline events, not a separately timed spot trigger.",
+ "execution":"Signal close time t. Entry at futures minute open t+60seconds (one full minute processing buffer); fixed-time exit open entry+hold. No simultaneous positions per side/config. No stop, no stacking. Opposite directions evaluated separately, not portfolio combined.",
+ "holding_minutes":[5,15,30],"primary_hold":15,"arms":["FUTURES_ONLY","SPOT_CONFIRMED"],
+ "total_settings":12,"known_spot_quality_exclusion":["2021-04-01"],
+ "exclusion_reason":"Previously recorded spot daily/monthly discrepancy; exclude from signal eligibility before outcomes. Never repair with future data.",
+ "funding":"Common entry eligibility excludes entries whose maximum30minute holding reaches next00/08/16UTC funding timestamp. Log unexpected delayed exits crossing funding; such settings cannot qualify without funding model.",
+ "missing":"No imputation. Missing/zero-volume/badflow minutes invalidate signal windows. Missing entry open reject; missing exit open wait next valid futures open and record delay. Unresolved positions retained, stop config.",
+ "cost":"Fee3bp each actual leg notional (provisional50%cashback); additional roundtrip0/2/4bp gives nominal6/8/10bp. No60%rebate. No measured spread/Bitget fills. 50USDT fixed initial notional, no compounding/leverage/account simulation.",
+ "support":"Report all counts and calendar-day frequency including zeros. Primary gate N>=1000 total,>=100 each year; frequent goal mean>=3 trades/calendar day and>=1/day eachyear.",
+ "economic_gate":"Primary treatment net8 mean>0 and eachyear>0, support/frequency, net8 better than FUTURES_ONLY at samehold; both adjacentholds net8>0; no unresolved/fundingcross. Necessary not sufficient. If preliminary gates fail archive without parameter rescue.",
+ "uncertainty_if_gate_passes":"Year-stratified7day movingblock bootstrap5000, preserve arm/day alignment for lift; family correction over all12 settings. No statistical qualification until dependence/multiple search considered.",
+ "attribution":"Also report unblocked outcomes of same futures events classified by confirmation; overlapping diagnostic, not independent trades or causal treatment effect.",
+ "isolation":"No2023+data; no threshold/exit search beyond12fixedcells; no reversal or rescue. Related prior flow/basis/ETHcontext campaigns disclosed. Research already reused, not independent validation."
+}

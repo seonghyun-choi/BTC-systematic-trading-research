@@ -1,0 +1,38 @@
+{
+  "settings": 12,
+  "positive6": 0,
+  "positive8": 0,
+  "positive10": 0,
+  "candidates": [
+    {
+      "side": "LONG",
+      "gates": {
+        "support": true,
+        "frequency": false,
+        "net_positive": false,
+        "incremental": true,
+        "neighbors": false,
+        "execution": true
+      },
+      "preliminary_pass": false,
+      "net8_lift_bp": 0.539476946288767
+    },
+    {
+      "side": "SHORT",
+      "gates": {
+        "support": true,
+        "frequency": true,
+        "net_positive": false,
+        "incremental": false,
+        "neighbors": false,
+        "execution": true
+      },
+      "preliminary_pass": false,
+      "net8_lift_bp": -1.0226827079610725
+    }
+  ],
+  "qualified": 0,
+  "requires_uncertainty": false,
+  "unresolved": 0,
+  "funding_cross": 0
+}

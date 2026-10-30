@@ -1,0 +1,14 @@
+[
+  {
+    "cutoff": "2020-07-01",
+    "prefix_pass": true
+  },
+  {
+    "cutoff": "2021-07-01",
+    "prefix_pass": true
+  },
+  {
+    "cutoff": "2022-07-01",
+    "prefix_pass": true
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "side": "LONG",
+    "hold": 5,
+    "arm": "FUTURES_ONLY",
+    "locked": 2545,
+    "missing_entry": 0,
+    "delayed_exit": 0,
+    "unresolved": 0,
+    "funding_cross": 0
+  },
+  {
+    "side": "LONG",
+    "hold": 5,
+    "arm": "SPOT_CONFIRMED",
+    "locked": 30,
+    "missing_entry": 0,
+    "delayed_exit": 0,
+    "unresolved": 0,
+    "funding_cross": 0
+  },
+  {
+    "side": "LONG",
+    "hold": 15,
+    "arm": "FUTURES_ONLY",
+    "locked": 8620,
+    "missing_entry": 0,
+    "delayed_exit": 0,
+    "unresolved": 0,
+    "funding_cross": 0
+  },
+  {
+    "side": "LONG",
+    "hold": 15,
+    "arm": "SPOT_CONFIRMED",
+    "locked": 118,
+    "missing_entry": 0,
+    "delayed_exit": 0,
+    "unresolved": 0,
+    "funding_cross": 0
+  },
+  {
+    "side": "LONG",
+    "hold": 30,
+    "arm": "FUTURES_ONLY",
+    "locked": 14039,
+    "missing_entry": 0,
+    "delayed_exit": 0,
+    "unresolved": 0,
+    "funding_cross": 0
+  },
+  {
+    "side": "LONG",
+    "hold": 30,
+    "arm": "SPOT_CONFIRMED",
+    "locked": 253,
+    "missing_entry": 0,
+    "delayed_exit": 0,
+    "unresolved": 0,
+    "funding_cross": 0
+  },
+  {
+    "side": "SHORT",
+    "hold": 5,
+    "arm": "FUTURES_ONLY",
+    "locked": 2686,
+    "missing_entry": 0,
+    "delayed_exit": 0,
+    "unresolved": 0,
+    "funding_cross": 0
+  },
+  {
+    "side": "SHORT",
+    "hold": 5,
+    "arm": "SPOT_CONFIRMED",
+    "locked": 46,
+    "missing_entry": 0,
+    "delayed_exit": 0,
+    "unresolved": 0,
+    "funding_cross": 0
+  },
+  {
+    "side": "SHORT",
+    "hold": 15,
+    "arm": "FUTURES_ONLY",
+    "locked": 9342,
+    "missing_entry": 0,
+    "delayed_exit": 0,
+    "unresolved": 0,
+    "funding_cross": 0
+  },
+  {
+    "side": "SHORT",
+    "hold": 15,
+    "arm": "SPOT_CONFIRMED",
+    "locked": 187,
+    "missing_entry": 0,
+    "delayed_exit": 0,
+    "unresolved": 0,
+    "funding_cross": 0
+  },
+  {
+    "side": "SHORT",
+    "hold": 30,
+    "arm": "FUTURES_ONLY",
+    "locked": 15215,
+    "missing_entry": 0,
+    "delayed_exit": 0,
+    "unresolved": 0,
+    "funding_cross": 0
+  },
+  {
+    "side": "SHORT",
+    "hold": 30,
+    "arm": "SPOT_CONFIRMED",
+    "locked": 382,
+    "missing_entry": 0,
+    "delayed_exit": 0,
+    "unresolved": 0,
+    "funding_cross": 0
+  }
+]
